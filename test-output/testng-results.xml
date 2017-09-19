@@ -1,45 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="23" passed="23">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7920" started-at="2017-09-13T12:21:50Z" finished-at="2017-09-13T12:21:58Z">
+  <suite name="Default suite" duration-ms="87039" started-at="2017-09-19T12:21:55Z" finished-at="2017-09-19T12:23:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7920" started-at="2017-09-13T12:21:50Z" finished-at="2017-09-13T12:21:58Z">
+    <test name="Default test" duration-ms="87039" started-at="2017-09-19T12:21:55Z" finished-at="2017-09-19T12:23:22Z">
       <class name="com.agro.TestCase">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.agro.TestCase@5c3bd550]" name="init" is-config="true" duration-ms="5308" started-at="2017-09-13T17:51:50Z" finished-at="2017-09-13T17:51:56Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.agro.TestCase@4cf777e8]" name="init" is-config="true" duration-ms="11420" started-at="2017-09-19T17:51:55Z" finished-at="2017-09-19T17:52:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.agro.TestCase@5c3bd550]" name="test1" duration-ms="121" started-at="2017-09-13T17:51:56Z" finished-at="2017-09-13T17:51:56Z">
+        <test-method status="PASS" signature="test1()[pri:1, instance:com.agro.TestCase@4cf777e8]" name="test1" duration-ms="3376" started-at="2017-09-19T17:52:07Z" finished-at="2017-09-19T17:52:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:com.agro.TestCase@5c3bd550]" name="test2" duration-ms="89" started-at="2017-09-13T17:51:56Z" finished-at="2017-09-13T17:51:56Z">
+        <test-method status="PASS" signature="test2()[pri:2, instance:com.agro.TestCase@4cf777e8]" name="test2" duration-ms="3165" started-at="2017-09-19T17:52:10Z" finished-at="2017-09-19T17:52:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:com.agro.TestCase@5c3bd550]" name="test3" duration-ms="78" started-at="2017-09-13T17:51:56Z" finished-at="2017-09-13T17:51:56Z">
+        <test-method status="PASS" signature="test3()[pri:3, instance:com.agro.TestCase@4cf777e8]" name="test3" duration-ms="3199" started-at="2017-09-19T17:52:13Z" finished-at="2017-09-19T17:52:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="test4()[pri:0, instance:com.agro.TestCase@5c3bd550]" name="test4" duration-ms="79" started-at="2017-09-13T17:51:56Z" finished-at="2017-09-13T17:51:56Z">
+        <test-method status="PASS" signature="test4()[pri:4, instance:com.agro.TestCase@4cf777e8]" name="test4" duration-ms="3179" started-at="2017-09-19T17:52:17Z" finished-at="2017-09-19T17:52:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test4 -->
-        <test-method status="PASS" signature="test5()[pri:0, instance:com.agro.TestCase@5c3bd550]" name="test5" duration-ms="454" started-at="2017-09-13T17:51:56Z" finished-at="2017-09-13T17:51:57Z">
+        <test-method status="PASS" signature="test5()[pri:5, instance:com.agro.TestCase@4cf777e8]" name="test5" duration-ms="6726" started-at="2017-09-19T17:52:20Z" finished-at="2017-09-19T17:52:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test5 -->
-        <test-method status="PASS" signature="test6()[pri:0, instance:com.agro.TestCase@5c3bd550]" name="test6" duration-ms="68" started-at="2017-09-13T17:51:57Z" finished-at="2017-09-13T17:51:57Z">
+        <test-method status="PASS" signature="test6()[pri:6, instance:com.agro.TestCase@4cf777e8]" name="test6" duration-ms="72" started-at="2017-09-19T17:52:27Z" finished-at="2017-09-19T17:52:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test6 -->
-        <test-method status="PASS" signature="test7()[pri:0, instance:com.agro.TestCase@5c3bd550]" name="test7" duration-ms="1499" started-at="2017-09-13T17:51:57Z" finished-at="2017-09-13T17:51:58Z">
+        <test-method status="PASS" signature="test7()[pri:7, instance:com.agro.TestCase@4cf777e8]" name="test7" duration-ms="1672" started-at="2017-09-19T17:52:27Z" finished-at="2017-09-19T17:52:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test7 -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.agro.TestCase@5c3bd550]" name="end" is-config="true" duration-ms="164" started-at="2017-09-13T17:51:58Z" finished-at="2017-09-13T17:51:58Z">
+        <test-method status="PASS" signature="test8()[pri:8, instance:com.agro.TestCase@4cf777e8]" name="test8" duration-ms="8492" started-at="2017-09-19T17:52:28Z" finished-at="2017-09-19T17:52:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+        <test-method status="PASS" signature="test9()[pri:9, instance:com.agro.TestCase@4cf777e8]" name="test9" duration-ms="3213" started-at="2017-09-19T17:52:37Z" finished-at="2017-09-19T17:52:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9 -->
+        <test-method status="PASS" signature="test10()[pri:10, instance:com.agro.TestCase@4cf777e8]" name="test10" duration-ms="3201" started-at="2017-09-19T17:52:40Z" finished-at="2017-09-19T17:52:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10 -->
+        <test-method status="PASS" signature="test11()[pri:11, instance:com.agro.TestCase@4cf777e8]" name="test11" duration-ms="3166" started-at="2017-09-19T17:52:43Z" finished-at="2017-09-19T17:52:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test11 -->
+        <test-method status="PASS" signature="test12()[pri:12, instance:com.agro.TestCase@4cf777e8]" name="test12" duration-ms="3163" started-at="2017-09-19T17:52:46Z" finished-at="2017-09-19T17:52:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test12 -->
+        <test-method status="PASS" signature="test13()[pri:13, instance:com.agro.TestCase@4cf777e8]" name="test13" duration-ms="3139" started-at="2017-09-19T17:52:50Z" finished-at="2017-09-19T17:52:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test13 -->
+        <test-method status="PASS" signature="test14()[pri:14, instance:com.agro.TestCase@4cf777e8]" name="test14" duration-ms="3181" started-at="2017-09-19T17:52:53Z" finished-at="2017-09-19T17:52:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test14 -->
+        <test-method status="PASS" signature="test15()[pri:15, instance:com.agro.TestCase@4cf777e8]" name="test15" duration-ms="3186" started-at="2017-09-19T17:52:56Z" finished-at="2017-09-19T17:52:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test15 -->
+        <test-method status="PASS" signature="test16()[pri:16, instance:com.agro.TestCase@4cf777e8]" name="test16" duration-ms="3220" started-at="2017-09-19T17:52:59Z" finished-at="2017-09-19T17:53:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test16 -->
+        <test-method status="PASS" signature="test17()[pri:17, instance:com.agro.TestCase@4cf777e8]" name="test17" duration-ms="3247" started-at="2017-09-19T17:53:02Z" finished-at="2017-09-19T17:53:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test17 -->
+        <test-method status="PASS" signature="test18()[pri:18, instance:com.agro.TestCase@4cf777e8]" name="test18" duration-ms="3156" started-at="2017-09-19T17:53:06Z" finished-at="2017-09-19T17:53:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test18 -->
+        <test-method status="PASS" signature="test19()[pri:19, instance:com.agro.TestCase@4cf777e8]" name="test19" duration-ms="3218" started-at="2017-09-19T17:53:09Z" finished-at="2017-09-19T17:53:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test19 -->
+        <test-method status="PASS" signature="test20()[pri:20, instance:com.agro.TestCase@4cf777e8]" name="test20" duration-ms="3215" started-at="2017-09-19T17:53:12Z" finished-at="2017-09-19T17:53:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test20 -->
+        <test-method status="PASS" signature="test21()[pri:21, instance:com.agro.TestCase@4cf777e8]" name="test21" duration-ms="3171" started-at="2017-09-19T17:53:15Z" finished-at="2017-09-19T17:53:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test21 -->
+        <test-method status="PASS" signature="test22()[pri:22, instance:com.agro.TestCase@4cf777e8]" name="test22" duration-ms="3221" started-at="2017-09-19T17:53:18Z" finished-at="2017-09-19T17:53:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test22 -->
+        <test-method status="PASS" signature="test23()[pri:23, instance:com.agro.TestCase@4cf777e8]" name="test23" duration-ms="482" started-at="2017-09-19T17:53:22Z" finished-at="2017-09-19T17:53:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test23 -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.agro.TestCase@4cf777e8]" name="end" is-config="true" duration-ms="275" started-at="2017-09-19T17:53:22Z" finished-at="2017-09-19T17:53:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->

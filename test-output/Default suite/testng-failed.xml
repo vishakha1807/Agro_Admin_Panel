@@ -7,7 +7,7 @@
         <methods>
           <include name="end"/>
           <include name="init"/>
-          <include name="test7"/>
+          <include name="test23"/>
         </methods>
       </class> <!-- com.agro.TestCase -->
     </classes>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suite 1]">
+  <test name="Regression suite 1(failed)">
+    <classes>
+      <class name="com.agro.TestCasesForHome">
+        <methods>
+          <include name="test17"/>
+          <include name="test18"/>
+          <include name="test11"/>
+          <include name="test22"/>
+          <include name="test20"/>
+          <include name="test12"/>
+          <include name="test23"/>
+          <include name="test15"/>
+          <include name="test10"/>
+          <include name="test21"/>
+          <include name="test13"/>
+          <include name="test16"/>
+          <include name="test14"/>
+          <include name="test9"/>
+          <include name="test19"/>
+          <include name="test8"/>
+        </methods>
+      </class> <!-- com.agro.TestCasesForHome -->
+    </classes>
+  </test> <!-- Regression suite 1(failed) -->
+</suite> <!-- Failed suite [suite 1] -->
