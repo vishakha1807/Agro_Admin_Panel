@@ -5,12 +5,12 @@ This project is a integration of Selenium,TestNg,Maven, Extent Report and jenkin
 This project follows the Page Object Model.
 
 ### Steps to create Maven project:-
-Step1:-Create a simple java project.
-Step2:-right click on the project and configure it to maven project.
-Step3:-go to pom.xml file.
-Step4:-Add all the necessary dependencies to pom.xml file.
-Step5:-now make java classes for each and every page web elements and 1 class for functionality of every class.
-STep6:-now make 1 TestNg class write all the testcases in this class.
+* Create a simple java project.
+* right click on the project and configure it to maven project.
+* go to pom.xml file.
+* Add all the necessary dependencies to pom.xml file.
+* now make java classes for each and every page web elements and 1 class for functionality of every class.
+* now make 1 TestNg class write all the testcases in this class.
 
 ### How to make Extent Report of the project:-
 * Add dependencies of extent report in pom.xml file.
