@@ -36,6 +36,6 @@ This project follows the Page Object Model.
 
 ### Make Changes in code:-
 
-1. please change the chrome driver path in System.setProperty() method in the class of BrowserFactory
+1. please change the chrome driver path to the path where your chrome driver is exist in your system in System.setProperty() method in the class of BrowserFactory
 
-2. Change the repository path in method ExtentReports() in @BeforeTest method in TestCase
+2. Change the repository path in method ExtentReports() where you want to save your extent report in @BeforeTest method in TestCase
