@@ -21,6 +21,18 @@ STep6:-now make 1 TestNg class write all the testcases in this class.
 * write "site" in goals field.
 * click on run.
 
+### How to run project in jenkins:-
+* Right click on project and click on Export.
+* Search for runnable JAR files.
+* Click on next and browse your path where you want to save your JAR file.
+* now go to jenkins and login in jenkins.
+* Create new item and make a free style project.
+* Click on Build now now your project is created in workspace of jenkins.(var/lib/jenkins/workspace/projectname)
+* now copy your jar file to this project folder.
+* now go to jenkin project, click on configure and go to Build option select Execute shell.
+* write a command-java -jar /var/lib/jenkins/workspace/projectname/yourjarfile.jar.
+* now click on build now option and check console output.
+
 
 ### Make Changes in code:-
 
