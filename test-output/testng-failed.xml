@@ -1,37 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Command line suite]">
-  <test name="Command line test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
       <class name="com.agro.TestCase">
         <methods>
-          <include name="test18"/>
-          <include name="test19"/>
-          <include name="test16"/>
-          <include name="test17"/>
-          <include name="test14"/>
-          <include name="test15"/>
-          <include name="test12"/>
-          <include name="test13"/>
-          <include name="test10"/>
-          <include name="test11"/>
           <include name="end"/>
           <include name="init"/>
-          <include name="test23"/>
-          <include name="test21"/>
-          <include name="test22"/>
-          <include name="test20"/>
-          <include name="test9"/>
-          <include name="test4"/>
-          <include name="test3"/>
-          <include name="test2"/>
-          <include name="test1"/>
-          <include name="test8"/>
-          <include name="test7"/>
-          <include name="test6"/>
-          <include name="test5"/>
+          <include name="test33"/>
         </methods>
       </class> <!-- com.agro.TestCase -->
     </classes>
-  </test> <!-- Command line test(failed) -->
-</suite> <!-- Failed suite [Command line suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
