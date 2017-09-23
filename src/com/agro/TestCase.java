@@ -330,7 +330,7 @@ public class TestCase
 	@Test(priority = 14)
 	public void test14() throws InterruptedException
 	{
-		// Creating the object of Homepage class
+		// Creating the object of Home-page class
 		homepage = new HomePage(driver);
 		
 		//calling method to highlight the web-element
@@ -518,9 +518,224 @@ public class TestCase
 	  	Assert.assertTrue(true);
 	  	logger.log(LogStatus.PASS, "test pass");
 	  	report.endTest(logger);
+		// Creating the object of java Script executor
+	  	JavascriptExecutor jse = (JavascriptExecutor)driver;
+		// calling executeScript() method to scroll the webpage
+	  	jse.executeScript("window.scrollBy(0,500)", "");
 	    
 	}
 	
+	/*
+	 * this is a test case to verify that Income card is exist or not
+	 */
+	@Test(priority = 24)
+	public void test24() throws InterruptedException
+	{
+		// Creating the object of Homepage class
+		homepage = new HomePage(driver);
+		fnHighlightMe(driver,HomePage_Elements.incomeCard(driver));
+		//Calling the method of HomePage class to verify that Income card is exist or not
+		homepage.isIncomeCardExist();
+		logger=report.startTest("Income Card Exist");
+	  	Assert.assertTrue(true);
+	  	logger.log(LogStatus.PASS, "test pass");
+	  	report.endTest(logger);
+	    
+	}
+	
+	/*
+	 * this is a test case to verify that User Registration card is exist or not
+	 */
+	@Test(priority = 25)
+	public void test25() throws InterruptedException
+	{
+		// Creating the object of Homepage class
+		homepage = new HomePage(driver);
+		fnHighlightMe(driver,HomePage_Elements.userRegistrationCard(driver));
+		//Calling the method of HomePage class to verify that User Registration card is exist or not
+		homepage.isuserRegistrationCardExist();
+		logger=report.startTest("User Registration Card Exist");
+	  	Assert.assertTrue(true);
+	  	logger.log(LogStatus.PASS, "test pass");
+	  	report.endTest(logger);
+	    
+	}
+	
+	/*
+	 * this is a test case to verify Farmer Registration card is exist or not
+	 */
+	@Test(priority = 26)
+	public void test26() throws InterruptedException
+	{
+		// Creating the object of Homepage class
+		homepage = new HomePage(driver);
+		fnHighlightMe(driver,HomePage_Elements.farmerRegistrationCard(driver));
+		//Calling the method of HomePage class to verify Farmer Registration card is exist or not
+		homepage.isfarmerRegistrationCardExist();
+		logger=report.startTest("Farmer Registration Card Exist");
+	  	Assert.assertTrue(true);
+	  	logger.log(LogStatus.PASS, "test pass");
+	  	report.endTest(logger);
+	    
+	}
+	
+	/*
+	 * this is a test case to verify Order Income Card is exist or not
+	 */
+	@Test(priority = 27)
+	public void test27() throws InterruptedException
+	{
+		// Creating the object of Homepage class
+		homepage = new HomePage(driver);
+		fnHighlightMe(driver,HomePage_Elements.orderIncomeCard(driver));
+		//Calling the method of HomePage class to verify Order Income Card is exist or not
+		homepage.isorderIncomeCardExist();
+		logger=report.startTest("Order Income Card Exist");
+	  	Assert.assertTrue(true);
+	  	logger.log(LogStatus.PASS, "test pass");
+	  	report.endTest(logger);
+	    
+	}
+	
+	/*
+	 * this is a test case to get default value of income from income card
+	 */
+	@Test(priority = 28)
+	public void test28() throws InterruptedException
+	{
+		// Creating the object of Homepage class
+		homepage = new HomePage(driver);
+		fnHighlightMe(driver,HomePage_Elements.defaultIncome(driver));
+		//Calling the method of HomePage class to get default value of income from income card
+		homepage.getDefaultValueOfIncomeCard();
+		logger=report.startTest("Default value of income is printed");
+	  	Assert.assertTrue(true);
+	  	logger.log(LogStatus.PASS, "test pass");
+	  	report.endTest(logger);
+	    
+	}
+	
+	/*
+	 * this is a test case to get default value of user registrations from user registration card
+	 */
+	@Test(priority = 29)
+	public void test29() throws InterruptedException
+	{
+		// Creating the object of Homepage class
+		homepage = new HomePage(driver);
+		fnHighlightMe(driver,HomePage_Elements.defaultUserRegistration(driver));
+		//Calling the method of HomePage class to get default value of user registrations from user registration card
+		homepage.getDefaultValueOfUserRegCard();
+		logger=report.startTest("Order Income Card Exist");
+	  	Assert.assertTrue(true);
+	  	logger.log(LogStatus.PASS, "test pass");
+	  	report.endTest(logger);
+	    
+	}
+	
+	/*
+	 * this is a test case to get default value of farmer registrations from farmer registration card
+	 */
+	@Test(priority = 30)
+	public void test30() throws InterruptedException
+	{
+		// Creating the object of Homepage class
+		homepage = new HomePage(driver);
+		fnHighlightMe(driver,HomePage_Elements.defaultFarmerRegistration(driver));
+		//Calling the method of HomePage class to get default value of farmer registrations from farmer registration card
+		homepage.getDefaultValueOfFarmerRegCard();
+		logger=report.startTest("Order Income Card Exist");
+	  	Assert.assertTrue(true);
+	  	logger.log(LogStatus.PASS, "test pass");
+	  	report.endTest(logger);
+	    
+	}
+	
+	/*
+	 * this is a test case to get default value of order income from order income card	
+	 */
+	@Test(priority = 31)
+	public void test31() throws InterruptedException
+	{
+		// Creating the object of Homepage class
+		homepage = new HomePage(driver);
+		fnHighlightMe(driver,HomePage_Elements.defaultOrderIncome(driver));
+		//Calling the method of HomePage class to get default value of order income from order income card	
+		homepage.getDefaultValueOfOrderIncomeCard();
+		logger=report.startTest("Order Income Card Exist");
+	  	Assert.assertTrue(true);
+	  	logger.log(LogStatus.PASS, "test pass");
+	  	report.endTest(logger);
+	    
+	}
+	
+	/*
+	 * this is a test case to get the income by passing different-2 parameter
+	 */
+	@Test(priority = 32)
+	public void test32() throws InterruptedException
+	{
+		// Creating the object of Home-page class
+		homepage = new HomePage(driver);
+		//Calling the method of HomePage class to get the income by passing different-2 parameter
+		homepage.getIncomeByIndex();
+		logger=report.startTest("Order Income Card Exist");
+	  	Assert.assertTrue(true);
+	  	logger.log(LogStatus.PASS, "test pass");
+	  	report.endTest(logger);
+	    
+	}
+	
+	/*
+	 * this is a test case to get the user registration by passing different-2 parameter
+	 */
+	@Test(priority = 33)
+	public void test33() throws InterruptedException
+	{
+		// Creating the object of Home-page class
+		homepage = new HomePage(driver);
+		//Calling the method of HomePage class to get the income by passing different-2 parameter
+		homepage.getuserByIndex();
+		logger=report.startTest("Order Income Card Exist");
+	  	Assert.assertTrue(true);
+	  	logger.log(LogStatus.PASS, "test pass");
+	  	report.endTest(logger);
+	    
+	}
+	
+	/*
+	 * this is a test case to get the farmer registration by passing different-2 parameter
+	 */
+	@Test(priority = 34)
+	public void test34() throws InterruptedException
+	{
+		// Creating the object of Home-page class
+		homepage = new HomePage(driver);
+		//Calling the method of HomePage class to get the income by passing different-2 parameter
+		homepage.getFarmerByIndex();
+		logger=report.startTest("Order Income Card Exist");
+	  	Assert.assertTrue(true);
+	  	logger.log(LogStatus.PASS, "test pass");
+	  	report.endTest(logger);
+	    
+	}
+	
+	/*
+	 * this is a test case to get the order income by passing different-2 parameter
+	 */
+	@Test(priority = 35)
+	public void test35() throws InterruptedException
+	{
+		// Creating the object of Home-page class
+		homepage = new HomePage(driver);
+		//Calling the method of HomePage class to get the income by passing different-2 parameter
+		homepage.getOrderIncomeByIndex();
+		logger=report.startTest("Order Income Card Exist");
+	  	Assert.assertTrue(true);
+	  	logger.log(LogStatus.PASS, "test pass");
+	  	report.endTest(logger);
+	    
+	}
 	/*
 	 * This is the method to highlight the web-elements
 	 */

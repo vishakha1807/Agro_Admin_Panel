@@ -259,5 +259,205 @@ public class HomePage extends HomePage_Elements
 	{
 		HomePage_Elements.menuItems(driver);
 	}
+		
+	/*
+	 * This is the method to verify that Income card is exist or not
+	 */
+	public void isIncomeCardExist()
+	{
+		//using if-else condition to verify whether income card is displayed or not
+		if(HomePage_Elements.incomeCard(driver).isDisplayed())
+			System.out.println("Income Card Exist");
+		else
+			System.out.println("Income Card not Exist");
+	}
+	
+	/*
+	 * This is the method to verify that User Registration card is exist or not
+	 */
+	public void isuserRegistrationCardExist()
+	{
+		//using if-else condition to verify whether user registration is displayed or not
+		if(HomePage_Elements.incomeCard(driver).isDisplayed())
+			System.out.println("User Registration Card Exist");
+		else
+			System.out.println("User Registration Card not Exist");
+	}
+	
+	/*
+	 * This is the method to verify Farmer Registration card is exist or not
+	 */
+	public void isfarmerRegistrationCardExist()
+	{
+		//using if-else condition to verify whether registration card is displayed or not
+		if(HomePage_Elements.incomeCard(driver).isDisplayed())
+			System.out.println("Farmer Registration Card Exist");
+		else
+			System.out.println("Farmer Registration Card not Exist");
+	}
+	
+	/*
+	 * This is the method to verify Order Income Card is exist or not
+	 */
+	public void isorderIncomeCardExist()
+	{
+		//using if-else condition to verify whether order income card is displayed or not
+		if(HomePage_Elements.incomeCard(driver).isDisplayed())
+			System.out.println("Order Income Card Exist");
+		else
+			System.out.println("Order Income Card not Exist");
+	}
+	
+	/*
+	 * This is the method to get default value of income from income card
+	 */
+	public void getDefaultValueOfIncomeCard()
+	{	
+		System.out.println("Default income is - "+HomePage_Elements.defaultIncome(driver).getText());
+	}
+	
+	/*
+	 * This is the method to get default value of user registrations from user registration card	
+	 */
+	public void getDefaultValueOfUserRegCard()
+	{	
+		System.out.println("Default user registration is - "+HomePage_Elements.defaultUserRegistration(driver).getText());
+	}
+	
+	/*
+	 * This is the method to get default value of farmer registrations from farmer registration card
+	 */
+	public void getDefaultValueOfFarmerRegCard()
+	{	
+		System.out.println("Default income is - "+HomePage_Elements.defaultFarmerRegistration(driver).getText());
+	}
+	
+	/*
+	 * This is the method to get default value of order income from order income card	
+	 */
+	public void getDefaultValueOfOrderIncomeCard()
+	{	
+		System.out.println("Default income is - "+HomePage_Elements.defaultOrderIncome(driver).getText());
+	}
+	
+	/*
+	 * This block is an indexed method to get the income for different-2 parameter and verifying 
+	 * that value should not be null
+	 */
+	public void getIncomeByIndex() throws InterruptedException
+	{
+		HomePage_Elements.dropDownItemsOfCard1(driver);
+		verifyIncomeByIndex();
+	}
+	
+	/*
+	 * This is the method to verify that All income should not be null
+	 */
+	public void verifyIncomeByIndex()
+	{
+		//if-else block is used to verify that all income is not null
+		if(HomePage_Elements.defaultIncome(driver).getText()!=null)
+			System.out.println("Total Income:- "+defaultIncome(driver).getText());
+			else
+			System.out.println("nothing to print");
+	}
+	
+	/*
+	 * This block is an indexed method to get the user registrations(all,old and new) for different-2 parameter and verifying 
+	 * that value should not be null
+	 */
+	public void getuserByIndex() throws InterruptedException
+	{
+		HomePage_Elements.dropDownItemsOfCard2(driver);
+		verifyuserByIndex();
+	}
+	
+	/*
+	 * This is the method to verify that user registrations(all,old and new) should not be null
+	 */
+	public void verifyuserByIndex()
+	{
+		//if-else block is used to verify that all user registration is not null
+		if(HomePage_Elements.defaultUserRegistration(driver).getText()!=null)
+			System.out.println("Total user Registration:- "+defaultUserRegistration(driver).getText());
+			else
+			System.out.println("nothing to print");
+		//if-else block is used to verify that old user registration is not null
+		if(HomePage_Elements.defaultOldUserRegistration(driver).getText()!=null)
+			System.out.println("Total old user Registration:- "+defaultOldUserRegistration(driver).getText());
+		else
+			System.out.println("nothing to print");
+		//if-else block is used to verify that new user registration is not null
+		if(HomePage_Elements.defaultNewUserRegistration(driver).getText()!=null)
+			System.out.println("Total new user Registration:- "+defaultNewUserRegistration(driver).getText());
+		else
+			System.out.println("nothing to print");
+	}
+	
+	/*
+	 * This block is an indexed method to get the farmer registrations(all,old and new) for different-2 parameter and verifying 
+	 * that value should not be null
+	 */
+	public void getFarmerByIndex() throws InterruptedException
+	{
+		HomePage_Elements.dropDownItemsOfCard3(driver);
+		verifyFarmerByIndex();
+	}
+	
+	/*
+	 * This is the method to verify that farmer registrations(all,old and new) should not be null
+	 */
+	public void verifyFarmerByIndex()
+	{
+		//if-else block is used to verify that all farmer registration is not null
+		if(HomePage_Elements.defaultFarmerRegistration(driver).getText()!=null)
+			System.out.println("Total Farmer Registration:- "+defaultFarmerRegistration(driver).getText());
+			else
+			System.out.println("nothing to print");
+		//if-else block is used to verify that old farmer registration is not null
+		if(HomePage_Elements.defaultOldFarmerRegistration(driver).getText()!=null)
+			System.out.println("Total old farmer Registration:- "+defaultOldFarmerRegistration(driver).getText());
+		else
+			System.out.println("nothing to print");
+		//if-else block is used to verify that new farmer registration is not null
+		if(HomePage_Elements.defaultNewFarmerRegistration(driver).getText()!=null)
+			System.out.println("Total new farmer Registration:- "+defaultNewFarmerRegistration(driver).getText());
+		else
+			System.out.println("nothing to print");
+	}
+	
+	/*
+	 * This block is an indexed method to get the order income for different-2 parameter and verifying 
+	 * that value should not be null
+	 */
+	public void getOrderIncomeByIndex() throws InterruptedException
+	{
+		HomePage_Elements.dropDownItemsOfCard4(driver);
+		verifyOrderIncomeByIndex();
+	}
+	
+	/*
+	 * This is the method to verify that order income should not be null
+	 */
+	public void verifyOrderIncomeByIndex()
+	{
+		//if-else block is used to verify that all order income is not null
+		if(HomePage_Elements.defaultOrderIncome(driver).getText()!=null)
+			System.out.println("Total order income:- "+defaultOrderIncome(driver).getText());
+			else
+			System.out.println("nothing to print");
+		//if-else block is used to verify that today order income is not null
+		if(HomePage_Elements.defaultTodayOrderIncome(driver).getText()!=null)
+			System.out.println("Today order income:- "+defaultTodayOrderIncome(driver).getText());
+		else
+			System.out.println("nothing to print");
+		//if-else block is used to verify that last week order income is not null
+		if(HomePage_Elements.defaultLastWeekOrderIncome(driver).getText()!=null)
+			System.out.println("Last week order income:- "+defaultLastWeekOrderIncome(driver).getText());
+		else
+			System.out.println("nothing to print");
+	}
 }
+
+
 	
