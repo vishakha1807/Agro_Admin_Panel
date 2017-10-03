@@ -734,6 +734,118 @@ public class TestCase
 	  	Assert.assertTrue(true);
 	  	logger.log(LogStatus.PASS, "test pass");
 	  	report.endTest(logger);
+		// Creating the object of java Script executor
+	  	JavascriptExecutor jse = (JavascriptExecutor)driver;
+		// calling executeScript() method to scroll the webpage
+	  	jse.executeScript("window.scrollBy(0,300)", "");
+	    
+	}
+	
+	/*
+	 * this is a test case to verify Activity card is exist or not
+	 */
+	@Test(priority = 36)
+	public void test36() throws InterruptedException
+	{
+		// Creating the object of Homepage class
+		homepage = new HomePage(driver);
+		fnHighlightMe(driver,HomePage_Elements.activityCard(driver));
+		//Calling the method of HomePage class to verify activity card is exist or not
+		homepage.isActivityCardExist();
+		logger=report.startTest("Activity Card Exist");
+	  	Assert.assertTrue(true);
+	  	logger.log(LogStatus.PASS, "test pass");
+	  	report.endTest(logger);
+	    
+	}
+	
+	/*
+	 * This method is to find the details of yukon gold and verify that clicking on yukon gold 
+	 * it is moving to next page or not
+	 */	
+	@Test(priority = 37)
+	public void test37() throws InterruptedException
+	{
+		// Creating the object of Homepage class
+		homepage = new HomePage(driver);
+		//Calling the method of HomePage class to verify existence of yukon gold
+		homepage.is_Yukon_Gold_Exist();
+		logger=report.startTest("Yukon Gold Exist");
+	  	Assert.assertTrue(true);
+	  	logger.log(LogStatus.PASS, "test pass");
+	  	report.endTest(logger);
+	    
+	}
+	
+	/*
+	 * This method is to find the details of quajava Crema and verify that clicking on quajava Crema
+	 * it is moving to next page or not
+	 */	
+	@Test(priority = 38)
+	public void test38() throws InterruptedException
+	{
+		// Creating the object of Homepage class
+		homepage = new HomePage(driver);
+		//Calling the method of HomePage class to verify existence of quajava Crema
+		homepage.is_Quajava_Crema_Exist();
+		logger=report.startTest("Quajava Crema Exist");
+	  	Assert.assertTrue(true);
+	  	logger.log(LogStatus.PASS, "test pass");
+	  	report.endTest(logger);
+	    
+	}
+	
+	/*
+	 * This method is to find the details of mortgage Lifter and verify that clicking on mortgage Lifter
+	 * it is moving to next page or not
+	 */	
+	@Test(priority = 39)
+	public void test39() throws InterruptedException
+	{
+		// Creating the object of Homepage class
+		homepage = new HomePage(driver);
+		//Calling the method of HomePage class to verify existence of quajava Crema
+		homepage.is_Mortgage_Lifter_Exist();
+		logger=report.startTest("Mortgage Lifter Exist");
+	  	Assert.assertTrue(true);
+	  	logger.log(LogStatus.PASS, "test pass");
+	  	report.endTest(logger);
+	    
+	}
+	
+	/*
+	 * This method is to find the details of Malus Pumila Apple and verify that clicking on Malus Pumila Apple
+	 * it is moving to next page or not
+	 */	
+	@Test(priority = 40)
+	public void test40() throws InterruptedException
+	{
+		// Creating the object of Homepage class
+		homepage = new HomePage(driver);
+		//Calling the method of HomePage class to verify existence of Malus Pumila Apple
+		homepage.is_Malus_Pumila_Apple_Exist();
+		logger=report.startTest("Malus Pumila Apple Exist");
+	  	Assert.assertTrue(true);
+	  	logger.log(LogStatus.PASS, "test pass");
+	  	report.endTest(logger);
+	    
+	}
+	
+	/*
+	 * This method is to find the details of Blood Orange and verify that clicking on Blood Orange
+	 * it is moving to next page or not
+	 */	
+	@Test(priority = 41)
+	public void test41() throws InterruptedException
+	{
+		// Creating the object of Homepage class
+		homepage = new HomePage(driver);
+		//Calling the method of HomePage class to verify existence of Blood Orange
+		homepage.is_Blood_Orange_Exist();
+		logger=report.startTest("Blood Orange Exist");
+	  	Assert.assertTrue(true);
+	  	logger.log(LogStatus.PASS, "test pass");
+	  	report.endTest(logger);
 	    
 	}
 	/*

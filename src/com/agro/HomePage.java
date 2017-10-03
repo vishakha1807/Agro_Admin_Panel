@@ -457,6 +457,61 @@ public class HomePage extends HomePage_Elements
 		else
 			System.out.println("nothing to print");
 	}
+	/*
+	 * This method is to verify that activity card is exist or not
+	 * */
+	public void isActivityCardExist()
+	{
+		if(HomePage_Elements.activityCard(driver).isDisplayed())
+			System.out.println("Activity Card Exist");
+		else
+			System.out.println("Activity Card not Exist");
+	}
+	
+	/*
+	 * This method is to find the details of yukon gold and verify that clicking on yukon gold 
+	 * it is moving to next page or not
+	 */	
+	public void is_Yukon_Gold_Exist() throws InterruptedException
+	{
+		HomePage_Elements.yukonGold(driver);
+	}
+	
+	/*
+	 * This method is to find the details of quajava Crema and verify that clicking on quajava Crema
+	 * it is moving to next page or not
+	 */	
+	public void is_Quajava_Crema_Exist() throws InterruptedException
+	{
+		HomePage_Elements.quajavaCrema(driver);;
+	}
+	
+	/*
+	 * This method is to find the details of mortgage Lifter and verify that clicking on mortgage Lifter
+	 * it is moving to next page or not
+	 */	
+	public void is_Mortgage_Lifter_Exist() throws InterruptedException
+	{
+		HomePage_Elements.mortgageLifter(driver);
+	}
+	
+	/*
+	 * This method is to find the details of Malus Pumila Apple and verify that clicking on Malus Pumila Apple
+	 * it is moving to next page or not
+	 */	
+	public void is_Malus_Pumila_Apple_Exist() throws InterruptedException
+	{
+		HomePage_Elements.malusPumilaApple(driver);
+	}
+	
+	/*
+	 * This method is to find the details of Blood Orange and verify that clicking on Blood Orange
+	 * it is moving to next page or not
+	 */	
+	public void is_Blood_Orange_Exist() throws InterruptedException
+	{
+		HomePage_Elements.bloodOrange(driver);
+	}
 }
 
 

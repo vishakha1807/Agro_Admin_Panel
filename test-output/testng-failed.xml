@@ -5,9 +5,10 @@
     <classes>
       <class name="com.agro.TestCase">
         <methods>
+          <include name="test40"/>
           <include name="end"/>
           <include name="init"/>
-          <include name="test33"/>
+          <include name="test41"/>
         </methods>
       </class> <!-- com.agro.TestCase -->
     </classes>
